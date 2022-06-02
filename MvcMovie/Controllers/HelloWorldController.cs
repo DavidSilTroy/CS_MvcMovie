@@ -13,9 +13,9 @@ namespace MvcMovie.Controllers
 
         // GET: /HelloWorld/Welcome
 
-        public string Welcome(string name, int numTimes = 1)
+        public string Welcome(string name, int numTimes = 1, int id = 1)
         {
-            return $"Hello {name}, NumTimes is: {numTimes}";
+            return $"Hello {name}, NumTimes is: {numTimes} and the id: {id}";
         }
 
     }
