@@ -2,6 +2,69 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h2 class="display-4">Hello from the index of the @ViewData["Title"]</h2>
+<h2>
+    Lesson 1: Introduction
+</h2>
+
+<div>
+    <a asp-controller="Helloworld" >
+        Hello World
+    </a>
 </div>
+
+<div>
+    <a asp-controller="Helloworld" asp-action="Welcome">
+        Welcome
+    </a>
+</div>
+
+<h2>
+    Lesson 2: EF Core
+</h2>
+
+<div>
+    <ul>
+        <li>
+            Creating the Model = Models/Rating.cs (look the slide)
+        </li>
+        <li>
+            Creating the Model = Models/Movie.cs (look the slide)
+        </li>
+        <li>
+            Creating the Database Context = Data/MovieContext.cs (look the slide)
+        </li>
+        <li>
+            Register MovieContext as a service = Startup.cs (look the slide/it is at the bottom)
+        </li>
+        <li>
+            Something in the Appsettings.json (look the slide)
+        </li>
+        <li>
+            Copy DbInitializer.cs in Data folder (look the slide/download the file from CANVAS )
+        </li>
+        <li>
+            Copy DbInitializer.cs in Data folder (look the slide/download the file from CANVAS )
+        </li>
+        <li>
+            Again the Startup.cs (look the slide) MovieContext context like argument
+        </li>
+        <li>
+            And that's it, let's test it
+        </li>
+    </ul>
+</div>
+
+<h2>
+    Lesson 3: Reading Data
+</h2>
+
+<div>
+    <a asp-controller="Movies" asp-action="List">
+        All Movies
+    </a>
+</div>
+
+
+
+
+

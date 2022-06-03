@@ -86,3 +86,7 @@ C:\Users\david\source\repos\www\MvcMovie\MvcMovie\obj\Debug\net5.0\ref\MvcMovie.
 C:\Users\david\source\repos\www\MvcMovie\MvcMovie\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
 C:\Users\david\source\repos\www\MvcMovie\MvcMovie\obj\Debug\net5.0\Razor\Views\Shared\_newLayout.cshtml.g.cs
 C:\Users\david\source\repos\www\MvcMovie\MvcMovie\obj\Debug\net5.0\Razor\Views\HelloWorld\Welcome.cshtml.g.cs
+C:\Users\david\source\repos\www\MvcMovie\MvcMovie\obj\Debug\net5.0\Razor\Views\HelloWorld\Helloworld.cshtml.g.cs
+C:\Users\david\source\repos\www\MvcMovie\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Create.cshtml.g.cs
+C:\Users\david\source\repos\www\MvcMovie\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
+C:\Users\david\source\repos\www\MvcMovie\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\List.cshtml.g.cs
