@@ -35,4 +35,9 @@
         Minte: 
         @DateTime.Now.Minute
     </li>
+    <li>
+        Last week this time: 
+        @(DateTime.Now - TimeSpan.FromDays(7))
+    </li>
+
 </ul>
