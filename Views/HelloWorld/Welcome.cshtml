@@ -9,7 +9,9 @@
     @for (int i = 0; i < (int)ViewData["NumTimes"]; i++)
    {
     <li>
-        @ViewData["Message"]
+        <p>
+            @ViewData["Message"]
+        </p>
     </li>
    }
 </ul>
@@ -39,5 +41,18 @@
         Last week this time: 
         @(DateTime.Now - TimeSpan.FromDays(7))
     </li>
-
 </ul>
+
+    <p>
+    @Html.ActionLink("With this you go back to the same page", "Welcome","HelloWorld")
+    </p>
+
+    <p>
+    <a asp-controller="HelloWorld" asp-action="Welcome" asp-route-id="4" asp-route-name="David Siltroy" asp-route-numtimes="3" >Another Option</a>
+    </p>
+
+    <p>
+    <a href="/HelloWorld/Welcome/4?name=David%20Silva&numtimes=3">This is just html</a>
+    </p>
+
+
