@@ -29,7 +29,9 @@ namespace MvcMovie
         {
             services.AddDbContext<MovieContext>(options =>
             options.UseSqlServer(
-            Configuration.GetConnectionString("DefaultConnection")));
+                Configuration.GetConnectionString("DefaultConnection")
+                )
+            );
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(

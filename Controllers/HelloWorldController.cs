@@ -16,9 +16,12 @@ namespace MvcMovie.Controllers
 
         public IActionResult Welcome(string name, int numTimes = 1, int id = 1)
         {
+            var justARandomData = $"This is the way to concat the {name} with something else like {numTimes}";
+
             //    HelloWorld/Welcome/2?name=David%20Silva&numtimes=3
             ViewData["Message"] = "Hello " + name;
             ViewData["NumTimes"] = numTimes;
+
 
             //return $"Hello {name}, NumTimes is: {numTimes} and the id: {id}";
             return View();

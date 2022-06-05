@@ -6,11 +6,12 @@ namespace MvcMovie.Data
 {
     public class MovieContext : DbContext
     {
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
+
         public MovieContext(DbContextOptions<MovieContext> options) : base(options)
         {
         }
-        public DbSet<Movie> Movies { get; set; }
-        public DbSet<Rating> Ratings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
