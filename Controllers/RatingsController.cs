@@ -68,6 +68,7 @@ namespace MvcMovie.Controllers
                     _context.Ratings.Attach(rating);
                     // modified rating object gets unchanged state
                     _context.Entry(rating).Property(r => r.Code).IsModified = true;
+                    _context.Entry(rating).Property(r => r.Name).IsModified = true;
                     // only property code gets changed state
                     // the whole rating object also gets changed state
                     _context.SaveChanges();
