@@ -9,7 +9,7 @@ namespace MvcMovie.Controllers
 {
     public class RatingsController : Controller
     {
-        private readonly MovieContext _context;
+        private MovieContext _context;
 
         public RatingsController(MovieContext context)
         {
@@ -59,7 +59,7 @@ namespace MvcMovie.Controllers
         // POST: Ratings/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("RatingID,Code")] Rating rating)
+        public IActionResult Edit(int id, [Bind("RatingID,Code,Name")] Rating rating)
         {
             if (ModelState.IsValid)
             {

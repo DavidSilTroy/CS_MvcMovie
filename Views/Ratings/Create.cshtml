@@ -10,14 +10,16 @@
     var ratings = (IEnumerable<SelectListItem>)ViewData["Ratings"];
 }
 
-<h1> @ViewData["Title"] </h1>
 
 <form asp-action="Create">
     <label asp-for="Code"> @Html.DisplayNameFor(model => model.Code) </label>
     <input asp-for="Code"/>
+    
     <br/>
-    <label asp-for="Name">@Html.DisplayNameFor(model => model.Name)</label>
-    <select asp-for="RatingID" asp-items="ratings"></select>
+
+    <label asp-for="Name"> @Html.DisplayNameFor(model => model.Name) </label>
+    <input asp-for="Name"/>
+
     <br/>
 
     <input type="submit" value="Create"/>

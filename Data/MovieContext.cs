@@ -15,6 +15,10 @@ namespace MvcMovie.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //this is because the method is override so first all that it has to do
+            base.OnModelCreating(modelBuilder);
+
+            //And then what I want:
             modelBuilder.Entity<Movie>().ToTable("Movie");
             modelBuilder.Entity<Rating>().ToTable("Rating");
         }
