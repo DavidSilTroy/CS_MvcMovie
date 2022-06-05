@@ -9,7 +9,7 @@ namespace MvcMovie.Controllers
 {
     public class RatingsController : Controller
     {
-        private MovieContext _context;
+        private readonly MovieContext _context;
 
         public RatingsController(MovieContext context)
         {
@@ -65,11 +65,18 @@ namespace MvcMovie.Controllers
             {
                 try
                 {
+
+                    //_context.Ratings.Update(rating);//This is to update everything
+
+                    //but to update just one or specific parts here:
+
                     _context.Ratings.Attach(rating);
                     // modified rating object gets unchanged state
+
                     _context.Entry(rating).Property(r => r.Code).IsModified = true;
+                    // only property Code gets changed state
                     _context.Entry(rating).Property(r => r.Name).IsModified = true;
-                    // only property code gets changed state
+                    // only property Name gets changed state
                     // the whole rating object also gets changed state
                     _context.SaveChanges();
                 }
