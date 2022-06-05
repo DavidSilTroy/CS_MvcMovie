@@ -22,6 +22,11 @@ namespace MvcMovie.Controllers
             var ratings = _context.Ratings.OrderBy(r => r.Name);
 
             return View(ratings.ToList());
+
+            //IMPORTANT JOIN IN DATABASE:
+            //var moviesAndRatings =
+            //_context.Ratings.Include(i => i.Movies).ToList();
+            //like the .Include() there is also .ThenInclude(); for the second table to another
         }
 
         // GET: Ratings/Create
